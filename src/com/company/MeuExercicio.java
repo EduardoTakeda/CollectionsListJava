@@ -10,8 +10,7 @@ public class MeuExercicio {
         Integer i=1;
 
         while (i<7) {
-            System.out.print("Entre com a temperatura do mês "+ i +" 25" +
-                    "");
+            System.out.print("Entre com a temperatura do mês "+ i +" ");
             Double temperaturaMes= scan.nextDouble();
             temperaturasSemestre.add(temperaturaMes);
             i++; }
