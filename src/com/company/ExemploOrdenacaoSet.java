@@ -94,7 +94,7 @@ class Serie implements Comparable<Serie>{
                 '}';
     }
 
-    // Sobescrever os metodos "equals" e "hashCode", "importante" quando se faz implementações com o "hash"
+    // Sobrescrever os metodos "equals" e "hashCode", "importante" quando se faz implementações com o "hash"
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
