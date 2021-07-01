@@ -25,6 +25,10 @@ public class ExercicioTresLinguagens {
 //        }
            System.out.println(ordemNome);
 
+           System.out.println("Ordem por IDE ");
+           Set<LinguagemFavorita> ordemIde = new TreeSet<>(new ComparatorNomeAnoDeCriacaoIde.CompareIde());
+           ordemIde.addAll(linguagens);
+           System.out.println(ordemIde);
     }
 }
 
