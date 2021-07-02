@@ -34,6 +34,16 @@ public class ExercicioTresLinguagens {
            Set<LinguagemFavorita> ordemAnoDeCriacaoENome = new TreeSet<>(new ComparatorNomeAnoDeCriacaoIde.CompareAnoDeCriacaoENome());
            ordemAnoDeCriacaoENome.addAll(linguagens);
            System.out.println(ordemAnoDeCriacaoENome);
+
+           System.out.println("Nome, Ano de crição e IDE ");
+           Set<LinguagemFavorita> ordemNomeAnoDeCriacaoEIde = new TreeSet<>(new ComparatorNomeAnoDeCriacaoIde());
+           ordemNomeAnoDeCriacaoEIde.addAll(linguagens);
+           System.out.println(ordemNomeAnoDeCriacaoEIde);
+
+           System.out.println("Listando um abaixo do outro ");
+           for (LinguagemFavorita ling : linguagens) {
+               System.out.println(ling);
+           }
     }
 }
 
