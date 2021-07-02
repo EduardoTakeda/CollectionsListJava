@@ -25,6 +25,7 @@ public class LinguagemFavorita implements Comparable<LinguagemFavorita> {
         return nome + "---" + anoCriacao + "---" + ide;
     }
 
+    //sobrescrever equals e hashCode
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -38,7 +39,7 @@ public class LinguagemFavorita implements Comparable<LinguagemFavorita> {
         return Objects.hash(nome, ide, anoCriacao);
     }
 
-
+    //implementar comparable na classe do objeto
     @Override
     public int compareTo(LinguagemFavorita linguagemFavorita) {
 

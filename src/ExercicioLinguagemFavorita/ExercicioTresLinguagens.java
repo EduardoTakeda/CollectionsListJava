@@ -16,7 +16,7 @@ public class ExercicioTresLinguagens {
             System.out.println(linguagem);
         }
         System.out.println("Ordem Natural (nome)");
-         Set<LinguagemFavorita> ordemNome = new TreeSet<>(linguagens);//para TreeSet funcionar, deve-se implements Comparable no objeto e criar seu método dentro da classe objeto
+         Set<LinguagemFavorita> ordemNome = new TreeSet<>(linguagens);//para TreeSet funcionar, deve-se implementar Comparable no objeto e criar seu método dentro da classe objeto
 //         ordemNome.addAll(linguagens0);
 //        for (LinguagemFavorita linguage : linguagens) {
 //            ordemNome.add(linguage);}
@@ -25,10 +25,15 @@ public class ExercicioTresLinguagens {
 //        }
            System.out.println(ordemNome);
 
-           System.out.println("Ordem por IDE ");
+           System.out.println("Ordem por IDE ");//criar o implemento e metodo CompareIde na classe Comparator
            Set<LinguagemFavorita> ordemIde = new TreeSet<>(new ComparatorNomeAnoDeCriacaoIde.CompareIde());
            ordemIde.addAll(linguagens);
            System.out.println(ordemIde);
+
+           System.out.println("Ano de criação e nome ");//criar implemento e metodo CompareAnoDeCriacaoENome na classe Comparator
+           Set<LinguagemFavorita> ordemAnoDeCriacaoENome = new TreeSet<>(new ComparatorNomeAnoDeCriacaoIde.CompareAnoDeCriacaoENome());
+           ordemAnoDeCriacaoENome.addAll(linguagens);
+           System.out.println(ordemAnoDeCriacaoENome);
     }
 }
 
