@@ -68,6 +68,13 @@ public class ExercicioEstadosPopulacao {
         }
         System.out.println(dicionarioEstadosPopulacao);
 
+        System.out.println("\nApague o dicionário de estados");
+        dicionarioEstadosPopulacao.clear();
+        System.out.println(dicionarioEstadosPopulacao);
+
+        System.out.println("\nConfira se o dicionário está vazio");
+        System.out.println(dicionarioEstadosPopulacao.isEmpty());
+
     }
 
 }
