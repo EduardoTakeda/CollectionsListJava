@@ -1,14 +1,12 @@
 package DesafioLancamentoDado100Vezes;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.Random;
 
 public class Lancando100Valores {
     public static void main(String[] args) {
-        int valor = 0;
-        int valor1=0,valor2=0,valor3=0,valor4=0,valor5=0,valor6=0;
+
         Map<Integer, Integer> lancamentos = new HashMap<>();
         Map<Integer, Integer> lancamentosContador = new HashMap<>(){{
             put(1,0);
@@ -35,13 +33,13 @@ public class Lancando100Valores {
             ob=ob+1;
 
             lancamentosContador.put(ind, ob);
-           // lancamentosContador.put(lancamentos.get(i),(valor0)+1);
-            //System.out.println(lancamentosContador);
+//            lancamentosContador.put(lancamentos.get(i),(valor0)+1);
+//            System.out.println(lancamentosContador);
         }
 
             System.out.println(lancamentos);
         System.out.println(lancamentosContador);
         }
-
+// LEMBRAR MUDAR O USER.NAME !!!!!!!!!!!!!!!!!!!!!!
     }
 
