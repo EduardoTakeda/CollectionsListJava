@@ -19,7 +19,6 @@ public class Lancando100Valores {
         Random random = new Random();
         int lancando = 0;
 
-
         while (lancando <= 99) {
             int numero = random.nextInt(6)+1;
             lancamentos.put(lancando,numero);
@@ -33,12 +32,12 @@ public class Lancando100Valores {
             ob=ob+1;
 
             lancamentosContador.put(ind, ob);
-//            lancamentosContador.put(lancamentos.get(i),(valor0)+1);
-//            System.out.println(lancamentosContador);
+//errado!            lancamentosContador.put(lancamentos.get(i),(valor0)+1);
         }
-
-            System.out.println(lancamentos);
-        System.out.println(lancamentosContador);
+//        System.out.println(lancamentosContador);
+        lancamentosContador.entrySet().forEach(entry->{
+            System.out.println(entry.getKey()+" = "+ entry.getValue());
+        });
         }
 // LEMBRAR MUDAR O USER.NAME !!!!!!!!!!!!!!!!!!!!!!
     }
